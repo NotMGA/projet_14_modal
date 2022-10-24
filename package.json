@@ -47,5 +47,8 @@
   "bugs": {
     "url": "https://github.com/NotMGA/projet_14_modal/issues"
   },
-  "homepage": "https://github.com/NotMGA/projet_14_modal#readme"
+  "homepage": "https://github.com/NotMGA/projet_14_modal#readme",
+  "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.18.6"
+  }
 }
