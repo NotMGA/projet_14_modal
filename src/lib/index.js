@@ -1,4 +1,6 @@
 import Close from './close.svg'
+import React from "react";
+
 function Modal(props) {
   function action_close() {
     const visibility = document.getElementsByClassName('modal_display')
