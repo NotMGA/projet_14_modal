@@ -1,6 +1,6 @@
 {
   "name": "modal_react_oc_mf",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": false,
   "dependencies": {
     "@babel/cli": "^7.19.3",
