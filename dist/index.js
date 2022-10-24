@@ -6,20 +6,21 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _close = _interopRequireDefault(require("./close.svg"));
+var _react = _interopRequireDefault(require("react"));
 function Modal(props) {
   function action_close() {
     var visibility = document.getElementsByClassName('modal_display');
     visibility[0].style.display = 'none';
   }
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: props.style_modal,
     className: "modal_display"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
     style: props.style_txt
-  }, props.modal_txt), /*#__PURE__*/React.createElement("button", {
+  }, props.modal_txt), /*#__PURE__*/_react.default.createElement("button", {
     style: props.style_btn,
     onClick: action_close
-  }, /*#__PURE__*/React.createElement("img", {
+  }, /*#__PURE__*/_react.default.createElement("img", {
     style: props.style_img,
     src: _close.default,
     alt: "croix"
