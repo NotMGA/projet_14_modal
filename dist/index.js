@@ -8,10 +8,6 @@ exports.default = void 0;
 var _close = _interopRequireDefault(require("./close.svg"));
 var _react = _interopRequireDefault(require("react"));
 function Modal(props) {
-  function action_close() {
-    var visibility = document.getElementsByClassName('modal_display');
-    visibility[0].style.display = 'none';
-  }
   return /*#__PURE__*/_react.default.createElement("div", {
     style: props.style_modal,
     className: "modal_display"
@@ -19,7 +15,7 @@ function Modal(props) {
     style: props.style_txt
   }, props.modal_txt), /*#__PURE__*/_react.default.createElement("button", {
     style: props.style_btn,
-    onClick: action_close
+    onClick: props.actionclose
   }, /*#__PURE__*/_react.default.createElement("img", {
     style: props.style_img,
     src: _close.default,
@@ -34,16 +30,19 @@ Modal.defaultProps = {
     borderRadius: '205px'
   },
   style_modal: {
-    display: 'flex',
+    display: 'none',
+    position: 'absolute',
+    top: '50%',
+    opacity: '1',
+    zIndex: '1',
     borderRadius: '205px',
+    background: 'white',
     border: '2px solid rgb(204, 51, 0)',
     justifyContent: 'center'
   },
   style_btn: {
     border: '0px solid',
     padding: '0px',
-    right: ' -74px',
-    top: '-8px',
     position: 'relative',
     height: '20px',
     borderRadius: '205px'
