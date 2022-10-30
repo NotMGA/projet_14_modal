@@ -1,30 +1,30 @@
-## Start with modal composant 
-
-# install the composant 
-# use this comande 
+# Start with modal composant 
+## install the composant 
+### use this comande 
+```sh
 npm i modal_react_oc_mf
-
-## config the copmposant 
-
-# 5 props to config the composant 
-
-# global 
-style : style_modal 
- 
-# text of the modal 
+```
+## configure the copmposant 
+### global 
+```sh
+style : style_modal
+```
+### text of the modal 
+```sh
 style: style_txt
 text : modal_txt
-
-# buttton 
+```
+### buttton 
+```sh
 style: style_btn
 onClick: actionclose
-
-# image close
+```
+### image close
+```sh
 style: style_img
-
-
-# default props 
-
+```
+# exemple / default props 
+```sh
 style_img: {
     width: 'auto',
     height: '20px',
@@ -45,10 +45,10 @@ style_img: {
   style_btn: {
     border: '0px solid',
     padding: '0px',
-
     position: 'relative',
     height: '20px',
     borderRadius: '205px',
   }
   style_txt: { padding: '20px' },
   modal_txt: 'Employee create',
+```
